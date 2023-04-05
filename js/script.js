@@ -192,7 +192,7 @@ const contacts = [
     }
 ];
 
-const dt = luxon.DateTime;
+
 
 const { createApp } = Vue;
 
@@ -201,8 +201,7 @@ createApp({
         return {
             contacts: contacts,
             selectedItem: null,
-            showChat: true,
-            oggi: dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
+            
         }
     },
     methods: {

@@ -26,7 +26,7 @@
 
         <div class="container bg-white">
             <div class="row d-flex flex-wrap h-100">
-                <div class="col-12 col-md-4 border-end contacts" :class="{sm-d-none}: !showChat">
+                <div class="col-12 col-md-4 border-end contacts h-100">
                     <div class="row">
                         <div class="col-12 contact-header d-flex align-items-center">
                             <img src="./img/avatar_io.jpg" alt="io" class="rounded-circle">
@@ -35,7 +35,7 @@
                             </div>
                             <div class="icons">
                                 <i class="fa-solid fa-circle-notch"></i>
-                                <i class="sa-solid fa-comment-alt"></i>
+                                <i class="fa-solid fa-message"></i>
                                 <i class="fa-solid fa-ellipsis-v"></i>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             <div class="row h-100 overflow-y-auto">
                                 <div class="row">
                                     <div class="contact d-flex align-items-center col-12"
-                                        v-for="(contact, index) in contacts" :key="contact.id">
+                                        v-for="(contact,index) in contacts" :key="contact.id">
                                         <img :src="contact.avatar" :alt="contact.name" class="rounded-circle">
                                         <div class="contact-info d-flex justify-content-between flex-grow-1">
                                             <div class="p-1 lh-1 ps-1">
@@ -79,7 +79,7 @@
 
                     </div>
                 </div>
-                <div class="chat col-12 col-md-8 h-100" :class="{sm-d-none}: showChat">
+                <div class="chat col-12 col-md-8 h-100">
                     <div class="row">
                         <div class="col-12 chat header d-flex align-items-center">
                             <img :src="contacts[1].avatar" alt="io" class="rounded-circle">

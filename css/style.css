@@ -29,6 +29,7 @@
 
 .contacts .contact-search{
     background-color: #FAFAFA;
+    height: 50px;
 }
 
 .chat .chat-sendmessage {
@@ -37,11 +38,19 @@
 
 .contacts .contact-header,
 .contacts .contact-notification{
-    height: 5%;
+    height: 70px;
+}
+
+.contact{
+    height: 100px;
 }
 
 img{
     height: 50px!important;
+}
+
+i {
+    padding: 5px;
 }
 
 /* debug */
