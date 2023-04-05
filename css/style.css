@@ -27,3 +27,25 @@
     background-color: #8EDAFC;
 }
 
+.contacts .contact-search{
+    background-color: #FAFAFA;
+}
+
+.chat .chat-sendmessage {
+    background-color: #F3EEEA;
+}
+
+.contacts .contact-header,
+.contacts .contact-notification{
+    height: 5%;
+}
+
+img{
+    height: 50px!important;
+}
+
+/* debug */
+
+.dbg{
+    border: 1px solid red;
+}
