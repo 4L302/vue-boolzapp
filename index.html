@@ -84,7 +84,7 @@
                         <div class="col-12 chat header d-flex align-items-center">
                             <img :src="contacts[1].avatar" alt="io" class="rounded-circle">
                             <div class="flex-grow-1 lh-1 ps-1">
-                                <strong>contacts[1].name</strong> <br>
+                                <strong>{{contacts[1].name}}</strong> <br>
                                 <small class="time">Ultimo accesso oggi alle 10/01/2020 16:15:22</small>
                             </div>
                             <div class="icons">
@@ -94,19 +94,19 @@
                             </div>
                         </div>
                         <div class="col-12 chat-message p-4" style="background-image: url(/img/mine.jpg);">
-                            <div class="message-wrapper sent">
-                                <div class="message sent">
-                                    <span>ciao</span> <br>
-                                    <div class="time x-small text-end">data mess</div>
+                            <div class="message-wrapper" :class="msg.status" v-for="(msg, index) in contacts[1].messages" :key="index">
+                                <div class="message" :class="msg.status">
+                                    <span>{{msg.message}}</span> <br>
+                                    <div class="time x-small text-end">{{msg.date}}</div>
                                 </div>
                             </div>
-                            <div class="message-wrapper received">
+                            <!-- <div class="message-wrapper received">
                                 <div class="message received">
                                     Ciao!
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="col-12 chat-sendmessage d-flex align-items-center">
+                        <div class="col-12 chat-send message d-flex align-items-center">
                             <div class="icons">
                                 <i class="fa-regular fa-smile"></i>
                             </div>
